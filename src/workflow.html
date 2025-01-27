@@ -14,7 +14,7 @@
                 <button id="menu-btn">Meny</button>
                 <div id="dropdown">
                     <ul>
-                        <li><a href="./">Startsida</a></li>
+                        <li><a href="./">DT211G - Moment 1</a></li>
                         <li><a href="pictures.html">Fotografier</a></li>
                         <li><a href="workflow.html">Arbetsprocess</a></li>
                     </ul>
@@ -22,7 +22,34 @@
             </nav>
         </header>
 
-        <main></main>
+        <main>
+            <section>
+                <h2>Arbetsprocess</h2>
+                <p>
+                    Jag började med att skapa ett nytt repo på GitHub som jag klonade till min dator, därefter så skapade jag ett nytt node projekt i mappen och installerade parcel.<br>
+                    Jag skapade de mappar och filer som jag visste skulle behövas till projektet samt så lade jag till de mappar som inte ska versionhanteras i .gitignore.
+                </p>
+                <p>
+                    Jag tänkte först ha en branch för utveckling som inte spårar dist och sedan en annan branch som endast spårar dist men det visade sig inte vara så enkelt att fixa
+                    så jag körde istället git init i dist mappen och har att när parcel bygger sidan så ändrar den även directory till dist och kör git push där till main medans
+                    när jag manuellt kör git push i roten på projekt mappen så är det till dev.<br>
+                    Nedan är build scriptet jag landade på.
+                </p>
+                <p style="font-family:monospace;background:black;color:lime;border-radius:1rem;padding:1rem;">
+                    rm dist/* &amp;&amp; parcel build --no-source-maps --public-url ./ &amp;&amp; cd dist &amp;&amp; git add . &amp;&amp; git commit -m 'Updating website' &amp;&amp; git push -u https://github.com/AstronomyOverdrive/dt211g_moment1.git master:main --force
+                </p>
+                <p>
+                    Den börjar då med att ta bort alla filer i dist, bygger webbplatsen utan map filer, byter till dist och sedan laddar upp till GitHub vart den automatisk deployar en Pages sida.<br>
+                    "--force" ser till att inga gamla filer ligger kvar på branchen.
+                </p>
+                <p>
+                    Bilderna omvandlas automatisk till WebP och JPEG i 500x500px storlek med kvalitet satt i sharp.config.json.
+                </p>
+                <p>
+                    För att minska på antalet HTTP anrop medans jag fortfarande kan ha flera CSS filer i utvecklingen så har jag en index.css fil där de andra filerna blir importerade och då läggs ihop av parcel.
+                </p>
+            </section>
+        </main>
 
         <footer>
             <div>© 2025 William Pettersson</div>

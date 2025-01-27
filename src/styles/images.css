@@ -1,1 +1,8 @@
-
+img {
+    width: 30%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 2.5%;
+    border: 2px solid #6106F9;
+    border-radius: 20px;
+}

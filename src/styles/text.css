@@ -1,9 +1,6 @@
-section {
-    margin-left: calc(50% - 27.5ch); /* Center section on screen */
-}
-
 section h2 {
     margin-bottom: 0;
+    text-align: center;
 }
 
 section p {
@@ -11,4 +8,5 @@ section p {
     font-size: 1.2rem;
     line-height: 1.3em;
     max-width: 55ch; /* Keep lines at a readable length */
+    margin-left: calc(50% - 27.5ch); /* Center section on screen */
 }

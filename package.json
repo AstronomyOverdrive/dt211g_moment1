@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/AstronomyOverdrive/dt211g_moment1#readme",
   "devDependencies": {
-    "parcel": "^2.13.3"
+    "parcel": "^2.13.3",
+    "sharp": "^0.33.5"
   }
 }

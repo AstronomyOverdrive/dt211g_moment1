@@ -6,15 +6,18 @@
 ul {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
-
 li {
-    padding: 0.2em;
+    padding: 0.5em;
     list-style-type: none; /* Remove bullet points */
 }
-
 li > a:hover {
     color: #DB06F9;
+}
+
+#current-page a { /* Mark current page in navigation menu */
+    color: gray;
 }
 
 button {
@@ -24,9 +27,36 @@ button {
     border: 2px solid white;
     border-radius: 1rem;
 }
-
 button:hover { /* Change button appearance on hover */
     background: white;
     color: black;
     border-color: black;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 600px) { /* For viewports over 600px */
+    li {
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+    li:nth-child(odd) { /* Makes options */
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+    }
+    li:nth-child(even) {
+        border: none;
+    }
+}
+@media only screen and (max-width: 600px) { /* For viewports under 600px */
+    li {
+        font-size: 1.5rem;
+        display: block;
+    }
+    li:nth-child(odd) {
+        border: none;
+    }
+    li:nth-child(even) { /* Makes options */
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
 }

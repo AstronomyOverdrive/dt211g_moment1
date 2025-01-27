@@ -6,7 +6,6 @@ body {
 
 header {
     background: #6106F9;
-    text-align: center;
 }
 header a { /* Style header links as normal text */
     color: white;
@@ -14,18 +13,14 @@ header a { /* Style header links as normal text */
 }
 header h1 {
     position: relative;
-    left: 2.5rem; /* Half of button width, centers header */
     display: inline-block;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
 }
 header button {
     position: relative;
     width: 5rem;
     height: 2rem;
-    left: 3rem;
-    top: -0.3rem;
 }
 
 main {
@@ -43,4 +38,32 @@ footer { /* Position footer at bottom */
 }
 footer > div { /* Vertically center footer text */
     margin-top: 1rem;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 600px) { /* For viewports over 600px */
+    header {
+        text-align: center;
+    }
+    header h1 {
+        left: 2.5rem; /* Half of button width, centers header */
+        font-size: 2rem;
+    }
+    header button {
+        left: 3rem;
+        top: -0.2rem;
+    }
+}
+@media only screen and (max-width: 600px) { /* For viewports under 600px */
+    header {
+        text-align: left;
+    }
+    header h1 {
+        left: 1rem;
+        font-size: 1.7rem;
+    }
+    header button {
+        left: 2rem;
+        top: -0.1rem;
+    }
 }

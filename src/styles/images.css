@@ -1,8 +1,27 @@
 img {
-    width: 30%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
-    margin-left: 2.5%;
+    margin-right: 0;
     border: 2px solid #6106F9;
     border-radius: 20px;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 1024px) { /* For viewports over 1024px */
+    img {
+        width: 30%;
+        margin-left: 2.5%;
+    }
+}
+@media only screen and (max-width: 1024px) { /* For viewports under 1024px */
+    img {
+        width: 45%;
+        margin-left: 2.5%;
+    }
+}
+@media only screen and (max-width: 600px) { /* For viewports under 600px */
+    img {
+        width: 90%;
+        margin-left: 5%;
+    }
 }

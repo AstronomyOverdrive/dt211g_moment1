@@ -1,1 +1,32 @@
+#dropdown {
+    display: none;
+    background: black;
+}
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.2em;
+    list-style-type: none;
+}
+
+li > a:hover {
+    color: #DB06F9;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}

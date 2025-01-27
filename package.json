@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "rm dist/* && parcel build --no-source-maps"
+    "build": "rm dist/* && parcel build --no-source-maps && cd dist && git add . && git commit -m 'Updating website' && git push -u https://github.com/AstronomyOverdrive/dt211g_moment1.git master:main --force"
   },
   "repository": {
     "type": "git",

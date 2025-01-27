@@ -1,0 +1,24 @@
+{
+  "name": "dt211g_moment1",
+  "version": "1.0.0",
+  "description": "Automatisering &amp; publicering",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "rm dist/* && parcel build --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstronomyOverdrive/dt211g_moment1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstronomyOverdrive/dt211g_moment1/issues"
+  },
+  "homepage": "https://github.com/AstronomyOverdrive/dt211g_moment1#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}

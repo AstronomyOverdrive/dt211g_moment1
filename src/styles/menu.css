@@ -1,5 +1,5 @@
 #dropdown {
-    display: none;
+    display: none; /* Hide menu by default */
     background: black;
 }
 
@@ -10,7 +10,7 @@ ul {
 
 li {
     padding: 0.2em;
-    list-style-type: none;
+    list-style-type: none; /* Remove bullet points */
 }
 
 li > a:hover {
@@ -18,14 +18,14 @@ li > a:hover {
 }
 
 button {
-    cursor: pointer;
+    cursor: pointer; /* Change cursor on hover */
     background: none;
     color: white;
     border: 2px solid white;
     border-radius: 1rem;
 }
 
-button:hover {
+button:hover { /* Change button appearance on hover */
     background: white;
     color: black;
     border-color: black;

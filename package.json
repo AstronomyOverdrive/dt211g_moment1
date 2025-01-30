@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Automatisering &amp; publicering",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "scripts": {
     "start": "parcel",
     "build": "rm dist/* && parcel build --no-source-maps --public-url ./ && cd dist && git add . && git commit -m 'Updating website' && git push -u https://github.com/AstronomyOverdrive/dt211g_moment1.git master:main --force"

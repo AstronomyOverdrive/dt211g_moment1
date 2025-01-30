@@ -1,0 +1,1 @@
+!function(){let e=document.getElementById("menu-btn"),n=document.getElementById("dropdown"),t=!1;e.addEventListener("click",function(){(t=!t)?n.style.display="block":n.style.display="none"})}();
